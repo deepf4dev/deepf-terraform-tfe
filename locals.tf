@@ -8,9 +8,10 @@ locals {
 
   workspace = {
     "deepf-tfe" = {
-      description    = ""
-      execution_mode = "local"
-      project_id     = module.project["deepf-project"].id
+      description         = ""
+      execution_mode      = "remote"
+      project_id          = module.project["deepf-project"].id
+      vcs_repo_identifier = "deepf4dev/deepf-terraform-tfe"
     }
   }
 
