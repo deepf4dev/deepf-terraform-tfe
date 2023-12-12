@@ -7,6 +7,7 @@ locals {
   }
 
   workspace = {
+
     "deepf-tfe" = {
       description         = ""
       execution_mode      = "remote"
