@@ -21,6 +21,14 @@ locals {
       project_id          = module.project["deepf-project"].id
       vcs_repo_identifier = "${var.github_organization_name}/deepf-terraform-github"
     }
+
+    "deepf-aws" = {
+      description         = "Automation workspace for AWS resources"
+      execution_mode      = "remote"
+      project_id          = module.project["deepf-project"].id
+      vcs_repo_identifier = "${var.github_organization_name}/deepf-terraform-aws"
+    }
   }
+
 
 }
